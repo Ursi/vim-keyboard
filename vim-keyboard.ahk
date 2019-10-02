@@ -2,6 +2,7 @@ TraySetIcon('vim_shortcut.ico')
 SetTitleMatchMode 'RegEx'
 LCtrl::CapsLock
 *CapsLock::Ctrl
+#If !WinActive('^MINGW64|GVIM\d*$')
 ^h::BS
 ^u::Send('+{Home}{BS}')
 #If WinActive('^MINGW64|GVIM\d*$')
