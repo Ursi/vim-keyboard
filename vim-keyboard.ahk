@@ -1,9 +1,9 @@
-traySetIcon('vim_shortcut.ico')
-setTitleMatchMode 'RegEx'
-lctrl::capslock
-*capslock::ctrl
-#if winActive('^MINGW64|GVIM\d*$')
-tab::esc
-esc::tab
-alt & tab::Send('{blind}{alt down}{tab}')
-alt up::Send('{alt up}')
+TraySetIcon('vim_shortcut.ico')
+SetTitleMatchMode 'RegEx'
+LCtrl::CapsLock
+*CapsLock::Ctrl
+#If WinActive('^MINGW64|GVIM\d*$')
+Tab::Esc
+Esc::Tab
+Alt & Tab::Send('{Blind}{Alt down}{Tab}')
+Alt Up::Send('{Alt up}')
