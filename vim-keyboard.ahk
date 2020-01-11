@@ -1,6 +1,6 @@
 TraySetIcon('vim_shortcut.ico')
 SetTitleMatchMode 'RegEx'
-WinMatch := '^MINGW64|VIM\d*$'
+WinMatch := '^MINGW64|VIM\d*$|^Neovim$'
 LCtrl::CapsLock
 *CapsLock::Ctrl
 #If !WinActive(WinMatch)
