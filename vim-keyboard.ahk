@@ -8,6 +8,7 @@ LCtrl::CapsLock
 ^u::Send('+{Home}{BS}')
 #If WinActive(WinMatch)
 Tab::Esc
-Esc::Tab
-Alt & Tab::Send('{Blind}{Alt down}{Tab}')
-Alt Up::Send('{Alt up}')
+LAlt & Tab::Send('{Blind}{LAlt down}{Tab}')
+LAlt Up::Send('{LAlt up}')
+RAlt & Tab::Send('{Blind}{RAlt down}{Tab}')
+RAlt Up::Send('{RAlt up}')
